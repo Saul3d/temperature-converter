@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+    
+<body>
+    <div class="main-container">
+        <h1>Temperature Converter</h1>
+        <form action="">
+            <label for="temp">Enter Temperature</label>
+            <input type="text" id="tempInput" class="temp">
+            <div class="radio-wrapper">
+                <label class="container">
+                    <input class="radio" type="radio" name="unit" value="Celsius">Celsius
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input class="radio" type="radio" name="unit" value="Fahrenheit">Fahrenheit
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="button-wrapper">
+                <button id="convertBtn" class="btn">convert</button>
+                <button id="clearBtn" class="btn">clear</button>
+            </div>
+            <label for="displayConvertedTemp" class="displayTempLabel">Converted Temperature</label>
+            <div id="displayConvertedTemp"></div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

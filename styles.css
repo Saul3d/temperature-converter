@@ -1,0 +1,142 @@
+html, body{
+    height:100%;
+    font-family: "Roboto", sans-serif;
+    color:rgb(99, 99, 99);
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+h1{
+    margin:0;
+    text-align:center;
+    background-color: rgb(201, 201, 201);
+    padding: 15px;
+    color: #fff;
+    border-radius: 0.3125em 0.3125em 0 0;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    color:inherit;
+    border:0.0625em solid  rgb(201, 201, 201);
+    padding:1.25em 2.5em;
+    border-radius:0 0 0.3125em 0.3125em;
+    width:25.25em;
+}
+.temp{
+    padding:1.0625em;
+    border-radius:0.3125em;
+    border:0.0625em solid  rgb(201, 201, 201);
+    font-size:1.0625em;
+    margin: .25em 0 0.0625em;
+}
+.radio-wrapper{
+    display:flex;
+    justify-content: space-between;
+    margin:1.25em;
+    padding:1.25em;
+}
+.radio-wrapper .container{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.radio-wrapper input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+.radioBtn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #29ABE2;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+.button-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.button-wrapper button{
+    width:46%;
+    padding:1em 1.25em;
+    border:none;
+    border-radius:0.3125em;
+    outline:none;
+}
+.btn{
+    color:#fff;
+    text-transform: uppercase;
+    font-size:1.0625em;
+}
+#convertBtn{
+    background-color:#29ABE2;
+}
+#clearBtn{
+    background-color:rgb(201, 201, 201);
+}
+.displayTempLabel{
+    margin-top:1.25em;
+}
+#displayConvertedTemp{
+    border:1px solid  rgb(201, 201, 201);
+    border-radius:0.3125em;
+    padding:1.25em; 
+    margin:.25em 0 0;
+    font-size:1.5em;
+    text-align: center;
+}
+.cold{
+    background-image: linear-gradient(#29abe2, lightBlue);
+    color:#fff;
+}
+.hot{
+    background-image: linear-gradient(#ed1c24, #fababd);
+    color:#fff;
+}
+.normal{
+    background-image: linear-gradient(#2db600, #bbe6ad);
+    color:#fff;  
+}
